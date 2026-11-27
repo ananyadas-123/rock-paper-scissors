@@ -37,7 +37,7 @@ for(let i=0;i<weapons.length;i++){
 
         //Set the revealing hands to rock
         player.src="images/Rock.png";
-        computer.src=`Images/Rock.png`;
+        computer.src="Images/Rock.png";
 
         //Hide the weapon box and show the player choices
         weaponBox.style.display="none";
