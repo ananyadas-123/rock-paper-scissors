@@ -37,7 +37,7 @@ for(let i=0;i<weapons.length;i++){
 
         //Set the revealing hands to rock
         player.src="images/Rock.png";
-        computer.src="Images/Rock.png";
+        computer.src="images/Rock.png";
 
         //Hide the weapon box and show the player choices
         weaponBox.style.display="none";
@@ -60,7 +60,7 @@ for(let i=0;i<weapons.length;i++){
 
             //Generate a random computer choice
             let randomChoice=computerChoices[Math.floor(Math.random()*computerChoices.length)];
-            computer.src=`Images/${randomChoice}.png`;
+            computer.src=`images/${randomChoice}.png`;
 
             //Get the user choice and random choice to determine the outcome
             let userChoice=e.target.parentElement.className;
@@ -111,6 +111,6 @@ playAgainBtn.addEventListener("click",()=>{
     //Resume the animation on the revealing hands when player choices his weapon
     let playerChoices=playerChoicesBox.querySelectorAll("div");
     for(let i=0;i<playerChoices.length;i++){
-        playerChoices[i].style.animationPlayState="runing";
+        playerChoices[i].style.animationPlayState="running";
     }
 })
