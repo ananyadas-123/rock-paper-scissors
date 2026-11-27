@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,63 +7,86 @@
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1 class="app-title">
-            Rock Paper Scissors
-        </h1>
 
+<body>
+
+    <div class="container">
+
+        <h1 class="app-title">Rock Paper Scissors</h1>
+
+        <!-- Weapon Selection -->
         <div class="weapon-box">
+
             <h3>Select your weapon</h3>
 
             <div class="weapons">
 
-                <div class="Rock">
-                    <img src="images/Rock.png" alt="">
+                <div class="Rock" data-choice="Rock">
+                    <img src="images/Rock.png" alt="Rock">
                 </div>
 
-                <div class="Paper">
-                    <img src="images/Paper.png" alt="">
+                <div class="Paper" data-choice="Paper">
+                    <img src="images/Paper.png" alt="Paper">
                 </div>
 
-                <div class="Scissors">
-                    <img src="images/Scissors.png" alt="">
+                <div class="Scissors" data-choice="Scissors">
+                    <img src="images/Scissors.png" alt="Scissors">
                 </div>
 
             </div>
 
         </div>
 
+        <!-- Player vs Computer -->
         <div class="player-choices">
+
             <h3>Player <span>V/S</span> Computer</h3>
-            <div class="player-choice">
-                <img src="images/Rock.png" alt="">
+
+            <div class="choice-images">
+
+                <div class="player-choice">
+                    <img src="images/Rock.png" alt="Player choice">
+                </div>
+
+                <div class="computer-choice">
+                    <img src="images/Rock.png" alt="Computer choice">
+                </div>
+
             </div>
-            <div class="computer-choice">
-                <img src="images/Rock.png" alt="">
-            </div>
+
         </div>
 
+        <!-- Result -->
         <div class="result-box">
-            <h3>Congrats, You Won! &#x1F389;</h3>
-            <button class="play-again">&#x2188; Play Again</button>
+
+            <h3>Congrats, You Won!</h3>
+
+            <button class="play-again">
+                ↻ Play Again
+            </button>
+
         </div>
 
+        <!-- Score -->
         <div class="score-box">
+
             <div class="won">
                 <h3>Won: <span>0</span></h3>
             </div>
+
             <div class="lost">
                 <h3>Lost: <span>0</span></h3>
             </div>
+
             <div class="draw">
                 <h3>Draw: <span>0</span></h3>
             </div>
-            
+
         </div>
+
     </div>
-   
-<!-- Script file -->
-<script src="script.js"></script>    
+
+    <script src="script.js"></script>
+
 </body>
 </html>
